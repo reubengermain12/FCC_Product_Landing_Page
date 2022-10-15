@@ -5,8 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Landing Page</title>
+    <style>
+      header {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 20px;
+        padding: 25px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        opacity: 80%;
+      }
+      @media (max-width: 500px) {
+        body {
+          flex-wrap: wrap;
+        }
+      }
+    </style>
   </head>
   <body>
-    <header id="header"></header>
+    <div id="page-wrapper">
+      <header id="header">
+        <div>
+          <img
+            id="header-img"
+            src="https://png.pngtree.com/png-clipart/20210227/ourlarge/pngtree-laptop-png-png-image_2961960.jpg"
+            alt="laptop"
+          />
+        </div>
+        <nav id="nav-bar">
+          <ul>
+            <li>
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#how-it-works">How It Works</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#prices">Pricing</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <h2>Handcrafted Guitars</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <input id="submit" type="submit" value="Submit" class="" />
+        </form>
+      </section>
+      <iframe
+        src="https://youtu.be/mP0qgSKIPUY"
+        id="video"
+        frameborder="0"
+      ></iframe>
+    </div>
+    <footer>
+      <a href="" id="features">Features</a>
+      <a href="" id="how-it-works">How It Works</a>
+      <a href="" id="prices">Prices</a>
+    </footer>
   </body>
 </html>

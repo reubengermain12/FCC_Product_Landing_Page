@@ -1,56 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Product Landing Page</title>
-    <style>
-      header {
-        position: fixed;
-        top: 0px;
-        width: 100%;
-        height: 20px;
-        padding: 25px 0px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: black;
-        opacity: 80%;
-      }
-      @media (max-width: 500px) {
-        body {
-          flex-wrap: wrap;
-        }
-      }
-    </style>
+    <script
+      src="https://kit.fontawesome.com/4f05169479.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
     <div id="page-wrapper">
       <header id="header">
-        <div>
-          <img
-            id="header-img"
-            src="https://png.pngtree.com/png-clipart/20210227/ourlarge/pngtree-laptop-png-png-image_2961960.jpg"
-            alt="laptop"
-          />
+        <div class="logo">
+          <i id="header-img" class="fa-solid fa-glasses"></i>
         </div>
+
         <nav id="nav-bar">
           <ul>
-            <li>
-              <a class="nav-link" href="#features">Features</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#how-it-works">How It Works</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#prices">Pricing</a>
-            </li>
+            <li><a class="nav-link" href="#women">Women</a></li>
+            <li><a class="nav-link" href="#men">Men</a></li>
+            <li><a class="nav-link" href="#new">New</a></li>
+            <li><a class="nav-link" href="#luxury">Luxury</a></li>
           </ul>
         </nav>
       </header>
-      <section>
-        <h2>Handcrafted Guitars</h2>
+
+      <div class="container"></div>
+
+      <section id="women">
+        <h2>Top notch quality sunglasses that makes a fashion statement</h2>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
           <input
             name="email"
@@ -59,19 +38,106 @@
             placeholder="Enter your email address"
             required
           />
-          <input id="submit" type="submit" value="Submit" class="" />
+          <input
+            id="submit"
+            type="submit"
+            value="Notify me before release date"
+            class="btn"
+          />
         </form>
       </section>
-      <iframe
-        src="https://youtu.be/mP0qgSKIPUY"
-        id="video"
-        frameborder="0"
-      ></iframe>
+
+      <div class="container">
+        <section id="men">
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+            <div class="desc">
+              <h2>Premium Materials</h2>
+              <p>
+                Our glasses frames use the shiniest gold, silver and brass
+                metals which are sourced in the most mineral rich countries.
+                This will increase the longevity of your purchase.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+            <div class="desc">
+              <h2>Fast Shipping</h2>
+              <p>
+                We make sure you recieve your sunglasses as soon as we have
+                finished making it. We also provide free returns if you are not
+                satisfied.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+            </div>
+            <div class="desc">
+              <h2>Quality Assurance</h2>
+              <p>
+                For every purchase you make, we will ensure there are no damages
+                or faults with your sunglasses.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="new">
+          <iframe
+            id="video"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </section>
+        <section id="luxury">
+          <div class="product" id="tenor">
+            <div class="level">Oakley</div>
+            <h2>$600</h2>
+            <ol>
+              <li>Outdoor.</li>
+              <li>UV protection.</li>
+              <li>Glasses holder pouch.</li>
+              <li>Shatter proof.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product" id="bass">
+            <div class="level">DKNY</div>
+            <h2>$900</h2>
+            <ol>
+              <li>Classy.</li>
+              <li>Rose tints.</li>
+              <li>Colourful.</li>
+              <li>Mini case holder.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product" id="valve">
+            <div class="level">Louis Vuitton</div>
+            <h2>$1200</h2>
+            <ol>
+              <li>Premium quality</li>
+              <li>Insurance availiable</li>
+              <li>Customise design.</li>
+              <li>100% UV.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+        </section>
+        <footer>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <span>Copyright 2016, Original Trombones</span>
+        </footer>
+      </div>
     </div>
-    <footer>
-      <a href="" id="features">Features</a>
-      <a href="" id="how-it-works">How It Works</a>
-      <a href="" id="prices">Prices</a>
-    </footer>
   </body>
 </html>

@@ -153,3 +153,20 @@ nav > ul {
     margin-top: 120px;
   }
 }
+#men {
+  margin-top: 30px;
+}
+#men .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: darkorange;
+}
+
+@media (max-width: 550px) {
+  #men .icon {
+    display: none;
+  }
+}

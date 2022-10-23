@@ -11,3 +11,6 @@ body {
 #page-wrapper {
   position: relative;
 }
+li {
+  list-style: none;
+}

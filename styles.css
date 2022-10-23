@@ -219,3 +219,30 @@ nav > ul {
   border: 1px solid #000;
   border-radius: 3px;
 }
+.product > .level {
+  background-color: rgb(198, 134, 134);
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.product > h2 {
+  margin-top: 15px;
+}
+.product > h2 {
+  margin-top: 15px;
+}
+.product > ol > li {
+  padding: 5px 0;
+}
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+.product > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}

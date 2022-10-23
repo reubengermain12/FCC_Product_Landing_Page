@@ -193,3 +193,13 @@ nav > ul {
     margin-top: 0;
   }
 }
+#new {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#new > iframe {
+  max-width: 560px;
+  width: 100%;
+}

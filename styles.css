@@ -203,3 +203,9 @@ nav > ul {
   max-width: 560px;
   width: 100%;
 }
+#luxury {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

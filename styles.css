@@ -246,3 +246,14 @@ nav > ul {
   background-color: orange;
   transition: background-color 1s;
 }
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}

@@ -23,3 +23,17 @@ a {
   width: 100%;
   margin: 0 auto;
 }
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: turquoise;
+  cursor: pointer;
+}
+.grid {
+  display: flex;
+}

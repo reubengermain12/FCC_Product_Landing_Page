@@ -257,3 +257,8 @@ nav > ul {
     margin-bottom: 10px;
   }
 }
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}

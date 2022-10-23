@@ -31,7 +31,6 @@ a {
   text-transform: uppercase;
   border: 3px black solid;
   border-radius: 2px;
-  background: turquoise;
   cursor: pointer;
 }
 .grid {
@@ -259,6 +258,21 @@ nav > ul {
 }
 footer {
   margin-top: 30px;
-  background-color: #ddd;
+  background-color: orange;
   padding: 20px;
+  background-color: #eee;
+}
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+footer > ul > li {
+  padding: 0 10px;
+}
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
 }
